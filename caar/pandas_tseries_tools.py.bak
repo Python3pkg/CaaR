@@ -11,7 +11,7 @@
 # from July 19, 2016
 
 # __future__ and future imports are only in caar for PY2/PY3, not pandas
-
+from __future__ import absolute_import, division, print_function
 
 import pandas.compat as compat
 

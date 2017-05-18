@@ -1,4 +1,4 @@
-
+from __future__ import absolute_import, division, print_function
 
 import click
 from future import standard_library
@@ -85,7 +85,7 @@ def picklert(rawfile, picklepath, states, thermostats, postal, cycle):
 
     print('Cycle             :', cycle)
 
-    parameters_accepted = eval(input('Pickle: enter y to proceed'))
+    parameters_accepted = input('Pickle: enter y to proceed')
     if parameters_accepted == 'y':
         kwargs = {'picklepath': picklepath, 'states': states,
                   'thermostats_file': thermostats,

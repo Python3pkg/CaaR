@@ -1,4 +1,4 @@
-
+from __future__ import absolute_import, division, print_function
 
 import pickle
 import random
@@ -156,7 +156,7 @@ def _multi_ids_and_data_vals(records, fields):
     """
     multi_ids = []
     vals = []
-    for k, v in list(records.items()):
+    for k, v in records.items():
         ids = tuple(getattr(k, f) for f in fields)
         multi_ids.append(ids)
         vals.append(v)
